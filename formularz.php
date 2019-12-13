@@ -57,30 +57,22 @@
       </div>
       <div class="container">
       <?php
-
 error_reporting(0);
 if ($_GET['action'] == "submissions") {
       @include('./selectData.php');
  } ?>
       </div>
-
-
-
-
       <?php
       if(isset($_POST['firstName'])){
 if ($_GET['action'] == "save") {
- 
 @include('./addToTable.php');
+  }
 }
-      }
 ?>
 <?php
 if ($_GET['action'] == "createDB") {
- 
 @include('./createTable.php');
-}
-      
+}     
 ?>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
